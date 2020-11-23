@@ -74,6 +74,25 @@ _G.data:extend{
             time = 5,
         },
     },
+    -- Basic fluid management
+    {
+        type = "technology",
+        name = "basic-fluid-management",
+        icon = "__research-desk__/graphics/pipe.png",
+        icon_size = 160,
+        order = "a",
+        prerequisites = {"electronics"},
+        effects = {
+            {type = "unlock-recipe", recipe = "pipe"},
+            {type = "unlock-recipe", recipe = "pipe-to-ground"},
+            {type = "unlock-recipe", recipe = "offshore-pump"}
+        },
+        unit = {
+            count = 10,
+            ingredients = {{"automation-science-pack", 1}},
+            time = 10,
+        },
+    },
     -- Radar, dependency of Space Science Pack
     {
         type = "technology",

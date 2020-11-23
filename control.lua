@@ -54,6 +54,7 @@ end
 local function add_desk(event)
     if event.created_entity.name == "research-desk" then
         table.insert(desks, {entity = event.created_entity, nearby_players = {}})
+        event.created_entity.active = false
         -- See if any players are close enough to use it, so we can enable it.
         for _, player in pairs(game.players) do
            check_nearby_desks(player)
@@ -98,7 +99,16 @@ local function on_player_changed_position(event)
     end
 end
 
-script.on_init(function()
+-- Would use on_init, but that's only for new games (or adding a mod to an
+-- existing game). Could store `desks` in the global save table, but that seems
+-- cumbersome (especially with references to players in it). Instead, we will
+-- run on_tick; it's very noisy, but we can quickly abort at every frame except
+-- the first.
+script.on_event(events.on_tick, function(_event)
+    -- Abort if we've already initialized, or the game table is not ready yet.
+    if game or not _G.game then
+        return
+    end
     -- Start by finding all existing desks on the map, and store them for later.
     game = _G.game
     for surface_name, surface in pairs(game.surfaces) do

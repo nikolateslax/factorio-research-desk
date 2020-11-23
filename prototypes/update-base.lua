@@ -49,12 +49,10 @@ add_table_entry(_G.data.raw["technology"]["electric-energy-distribution-1"], "pr
 add_table_entry(_G.data.raw["technology"]["space-science-pack"], "prerequisites", "visibility")
 add_table_entry(_G.data.raw["technology"]["nuclear-power"], "prerequisites", "steam-power")
 add_table_entry(_G.data.raw["technology"]["mining-productivity-1"], "prerequisites", "electric-mining")
+add_table_entry(_G.data.raw["technology"]["fluid-handling"], "prerequisites", "basic-fluid-management")
 
 -- Add old recipes to old technologies, to fit new style
 add_table_entry(_G.data.raw["technology"]["electronics"], "effects", {type = "unlock-recipe", recipe = "electronic-circuit"})
-add_table_entry(_G.data.raw["technology"]["fluid-handling"], "effects", {type = "unlock-recipe", recipe = "pipe"})
-add_table_entry(_G.data.raw["technology"]["fluid-handling"], "effects", {type = "unlock-recipe", recipe = "pipe-to-ground"})
-add_table_entry(_G.data.raw["technology"]["fluid-handling"], "effects", {type = "unlock-recipe", recipe = "offshore-pump"})
 
 -- Remove electronics requirement from automation, since we've reversed those.
 for i, v in ipairs(_G.data.raw["technology"]["electronics"].prerequisites) do

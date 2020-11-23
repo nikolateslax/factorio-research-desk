@@ -1,16 +1,9 @@
 {
     "name": "research-desk",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "title": "Research Desk",
     "author": "saltlands",
     "description": "A Desk for Manual Lab Research",
-    "factorio_version": "0.18.24",
-    "dependencies": ["base >= 0.18"],
-    "package": {
-        "no_portal_upload": true,
-        "no_git_push": true,
-        "scripts": {
-            "prepackage": "C:\\Users\\greg\\Documents\\factorio-mod-dev\\cp.cmd"
-        }
-    }
+    "factorio_version": "1.1",
+    "dependencies": ["base >= 1.1"]
 }
