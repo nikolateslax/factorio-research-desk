@@ -2,7 +2,7 @@ local desk = table.deepcopy(_G.data.raw["lab"]["lab"])
 for k,v in pairs({
     type = "lab",
     name = "research-desk",
-    icon = "__research-desk-fork__/graphics/research-desk-icon.png",
+    icon = "__research-desk-fork-localized-en__/graphics/research-desk-icon.png",
     icon_size = 32,
     order = "c",
     max_health = 50,
@@ -10,14 +10,14 @@ for k,v in pairs({
     off_animation = {
         layers = {
             {
-                filename = "__research-desk-fork__/graphics/research-desk-horizontal.png",
+                filename = "__research-desk-fork-localized-en__/graphics/research-desk-horizontal.png",
                 size = {82, 82},
                 frame_count = 1,
                 line_length = 1,
                 shift = {0.25, 0},
             },
             {
-                filename = "__research-desk-fork__/graphics/research-desk-horizontal-shadow.png",
+                filename = "__research-desk-fork-localized-en__/graphics/research-desk-horizontal-shadow.png",
                 size = {82, 82},
                 frame_count = 1,
                 line_length = 1,
@@ -30,14 +30,14 @@ for k,v in pairs({
         -- TODO: Animate this!
         layers = {
             {
-                filename = "__research-desk-fork__/graphics/research-desk-horizontal-busy.png",
+                filename = "__research-desk-fork-localized-en__/graphics/research-desk-horizontal-busy.png",
                 size = {82, 82},
                 frame_count = 1,
                 line_length = 1,
                 shift = {0.25, 0},
             },
             {
-                filename = "__research-desk-fork__/graphics/research-desk-horizontal-shadow.png",
+                filename = "__research-desk-fork-localized-en__/graphics/research-desk-horizontal-shadow.png",
                 size = {82, 82},
                 frame_count = 1,
                 line_length = 1,

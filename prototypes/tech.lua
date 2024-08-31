@@ -9,7 +9,7 @@ local function make_tech(tech_name, pre, cnt, tm, img, img_sz)
 			ingredients = {{"automation-science-pack", 1}},
 			time = tm,
 		},
-		icon = "__research-desk-fork__/graphics/" .. img
+		icon = "__research-desk-fork-localized-en__/graphics/" .. img
 	}
 	
 	if img_sz then
