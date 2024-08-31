@@ -2,6 +2,8 @@
 
 A mod for Factorio
 
+This fork incorporates fixes from [U.N.Owen](https://mods.factorio.com/user/U.N.Owen) on the Factorio mod portal, as well as my own fixes.
+
 ### What does it do? ###
 
 Adds a new item, the Research Desk, which allows the player to manually research
