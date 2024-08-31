@@ -1,9 +1,16 @@
 {
-    "name": "research-desk",
-    "version": "0.0.2",
-    "title": "Research Desk",
-    "author": "saltlands",
+    "name": "research-desk-fork-localized-en",
+    "version": "0.0.4",
+    "title": "Research Desk (fork)",
+    "author": "saltlands, U.N.Owen, NikolaTeslaX",
     "description": "A Desk for Manual Lab Research",
     "factorio_version": "1.1",
-    "dependencies": ["base >= 1.1"]
+    "dependencies": [
+    	"base >= 1.1.61",
+    	"! research-desk",
+    	"? MoreScience >= 0.2.13",
+    	"? bzcarbon >= 0.4.0",
+    	"? bzaluminum >= 0.4.2",
+    	"? bzgas >= 0.0.16"
+    ]
 }

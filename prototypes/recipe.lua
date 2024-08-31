@@ -1,12 +1,36 @@
-local desk = {
-    type = "recipe",
-    name = "research-desk",
-    ingredients = {
-        {"wood", 1}, -- should be higher, maybe 10 wood, 5 plate, or something
-        {"iron-plate", 1},
-    },
-    result = "research-desk",
-    energy_required = 5, -- Seconds
-}
+data:extend({
+	{
+		type = "recipe",
+		name = "research-desk",
+		ingredients = {
+			{"wood", 16},
+			{"iron-plate", 6},
+			{"stone", 10},
+		},
+		result = "research-desk",
+		energy_required = 5, -- Seconds
+	}, {
+		type = "recipe",
+		name = "circuit-board",
+		enabled = false,
+		normal = {
+			ingredients = {
+				{"wood", 1},
+				{"copper-cable", 1}
+			},
+			result = "circuit-board",
+			enabled = false,
+		},
+		expensive = {
+			ingredients = {
+				{"wood", 2},
+				{"copper-cable", 3}
+			},
+			result = "circuit-board",
+			enabled = false,
+		}
+	}
+});
 
-_G.data:extend{desk}
+
+
