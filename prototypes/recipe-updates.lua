@@ -30,7 +30,7 @@ local plate = settings.startup["circuit-material"].value
 local cable = mods.bzaluminum and "aluminum-cable" or "copper-cable"
 
 if not data.raw.item[plate] then
-	log("Unknow material " .. plate .. " cannot be used in circuit-board recipe. Rollback to wood.")
+	log("Unknown material " .. plate .. " cannot be used in circuit-board recipe. Rollback to wood.")
 	plate = "wood"
 end
 
